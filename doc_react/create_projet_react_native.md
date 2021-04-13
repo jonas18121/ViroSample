@@ -1,34 +1,34 @@
-# creer un projet react native avec la libairie viro media
+# Creer un projet react native avec la libairie viro media
 
-pour créer un projet react-native dans CMD windows
-installer react.js (en globale)
+Pour créer un projet react-native dans CMD windows
+Installer react.js (en globale)
 
     npm install -g create-react-app
 
-puis installer la cli de react-native dans CMD windows
+Puis installer la cli de react-native dans CMD windows
 
     npm install -g react-native-cli
 
-puis faite 
+Puis faite 
 
     react-native -v
 
 
-## installer la libairie viro media
+## Installer la libairie viro media
 
-dans la CMD windows
+Dans la CMD windows
 
     react-native init ViroSample --version=0.59.3
 
-ou cette version qui permettra de ne pas avoir d'erreur après avoir fait npm install -S -E react-viro
+Ou cette version qui permettra de ne pas avoir d'erreur après avoir fait npm install -S -E react-viro
 
     react-native init ViroSample --version=0.59.9
 
-puis 
+Puis 
 
     cd ViroSample
 
-puis toujours dans la CMD
+Puis toujours dans la CMD
 
     npm install -S -E react-viro
 
@@ -37,14 +37,14 @@ Si à cette étape il y a des erreurs lors de l'installation rajouter --legacy-p
     npm install -S -E react-viro --legacy-peer-deps
 
 
-puis 
+Puis 
 
 
     Copiez les fichiers de node_modules \ react-viro \ bin \ files \ javascript \ * à la racine de votre répertoire.
 
     Cela devrait remplacer les fichiers index.js et App.js et ajouter metro.config.js, rn-cli.config.js et un répertoire js / à votre projet ViroSample.
 
-puis
+Puis
 
     npm start
 
@@ -52,7 +52,7 @@ S'il y a cette erreur après le npm start
 
     error Invalid regular expression: /(.*\\__fixtures__\\.*|node_modules[\\\]react[\\\]dist[\\\].*|website\\node_modules\\.*|heapCapture\\bundle\.js|.*\\__tests__\\.*)$/: Unterminated character class. Run CLI with --verbose flag for more details.
 
-aller dans le dossier \node_modules\metro-config\src\defaults\blacklist.js et modifier la première ligne de sharedBlacklist
+Aller dans le dossier \node_modules\metro-config\src\defaults\blacklist.js et modifier la première ligne de sharedBlacklist
 
     var sharedBlacklist = [
         /node_modules[/\\]react[/\\]dist[/\\].*/,
@@ -72,10 +72,10 @@ en
 
 
 
-## télécharger viro media sur le telephone et se connecter par une adresse ngrok dans < Enter Testbed >
+## Télécharger viro media sur le telephone et se connecter par une adresse ngrok dans l'ongelt < Enter Testbed > de viro media
 
 
-## installer une ngrok sur l'ordinateur
+## Installer une ngrok sur l'ordinateur
 
 Télécharger le dossier zip de ngrok à cette adresse https://ngrok.com/download 
 
