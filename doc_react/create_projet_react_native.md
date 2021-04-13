@@ -14,7 +14,7 @@ Puis faite
     react-native -v
 
 
-## Installer la libairie viro media
+## Installer la libairie viro media 
 
 Dans la CMD windows
 
