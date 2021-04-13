@@ -74,6 +74,7 @@ en
 
 ## Télécharger viro media sur le telephone et se connecter par une adresse ngrok dans l'ongelt < Enter Testbed > de viro media
 
+Si vous n'avez pas d'adresse ngrok
 
 ## Installer une ngrok sur l'ordinateur
 
