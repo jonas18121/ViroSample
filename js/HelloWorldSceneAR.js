@@ -8,6 +8,8 @@ import {
   ViroARScene,
   ViroText,
   ViroConstants,
+  ViroBox,
+  ViroMaterials
 } from 'react-viro';
 
 export default class HelloWorldSceneAR extends Component {
@@ -17,7 +19,7 @@ export default class HelloWorldSceneAR extends Component {
 
     // Set initial state here
     this.state = {
-      text : "Initializing AR..."
+      text : "Initializing AR... ok"
     };
 
     // bind 'this' to functions
@@ -28,6 +30,7 @@ export default class HelloWorldSceneAR extends Component {
     return (
       <ViroARScene onTrackingUpdated={this._onInitialized} >
         <ViroText text={this.state.text} scale={[.5, .5, .5]} position={[0, 0, -1]} style={styles.helloWorldTextStyle} />
+        <ViroBox position={[0, -.5, 10]} scale={[.3, .3, .1]} materials={["grid"]} />
       </ViroARScene>
     );
   }
@@ -50,6 +53,12 @@ var styles = StyleSheet.create({
     color: '#ffffff',
     textAlignVertical: 'center',
     textAlign: 'center',  
+  },
+});
+
+ViroMaterials.createMaterials({
+  grid: {
+    diffuseTexture: require('./res/grid_bg.jpg'),
   },
 });
 
