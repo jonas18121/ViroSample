@@ -85,7 +85,7 @@ Télécharger le dossier zip de ngrok à cette adresse https://ngrok.com/downloa
 
 Décomprésser l'executable (le fichier `ngrok.exe`). 
 
-- 1) Mettre l'executable (le fichier `ngrok.exe`), dans votre projet afin de pouvoir utiliser la commande `ngrok` dans le terminale, qui point sur votre projet.
+- 1) Mettre l'executable (le fichier `ngrok.exe`), dans votre projet afin de pouvoir utiliser la commande `ngrok` dans le terminale, qui pointe sur votre projet.
 
 ou
 
