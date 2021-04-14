@@ -79,7 +79,7 @@ Après :
 
 Si vous n'avez pas d'adresse ngrok
 
-## Installer une ngrok sur l'ordinateur
+## Installer ngrok sur l'ordinateur
 
 Télécharger le dossier zip de ngrok à cette adresse https://ngrok.com/download 
 
