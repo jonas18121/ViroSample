@@ -1,12 +1,12 @@
 # Creer un projet react native avec la libairie viro media
 
-## Pour créer un projet react-native dans CMD windows
+## Pour créer un projet react-native dans l'invite de commande (CMD) windows
 
 Installer react.js (en globale)
 
     > npm install -g create-react-app
 
-Puis installer la cli de react-native (en globale) dans CMD windows
+Puis installer la cli de react-native (en globale) dans l'invite de commande (CMD) windows
 
     > npm install -g react-native-cli
 
@@ -17,11 +17,11 @@ Puis faite, la commande ci-dessous pour vérifier que c'est bien installer
 
 ## Installer la libairie viro media 
 
-Dans la CMD windows
+Dans l'invite de commande (CMD) windows
 
     > react-native init ViroSample --version=0.59.3
 
-Ou cette version qui permettra de ne pas avoir d'erreur après avoir fait `> npm install -S -E react-viro`
+Ou cette version qui permettra de ne pas avoir d'erreur après avoir fait la commande `> npm install -S -E react-viro`
 
     > react-native init ViroSample --version=0.59.9
 
@@ -29,7 +29,7 @@ Puis
 
     > cd ViroSample
 
-Puis toujours dans la CMD windows
+Puis toujours dans l'invite de commande (CMD) windows
 
     > npm install -S -E react-viro
 
@@ -89,10 +89,10 @@ Décomprésser l'executable.
 
 Puis se connecter dans ngrok à cette adresse https://dashboard.ngrok.com/signup , afin de pouvoir récupérer un authtoken
 
-Une fois récupérer le authtoken , taper en ligne de commande ngrok authtoken + votre authtoken :
+Une fois récupérer le authtoken , taper en ligne de commande `> ngrok authtoken + votre authtoken` :
 
     > ngrok authtoken <your_auth_token>
 
-Puis tapez ngrok http + le port ou est executer le projet 
+Puis tapez dans l'invite de commande (CMD) windows `> ngrok http + le port ou est executer le projet` 
 
     > ngrok http 8081
