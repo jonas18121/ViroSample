@@ -1,40 +1,41 @@
 # Creer un projet react native avec la libairie viro media
 
-Pour créer un projet react-native dans CMD windows
+## Pour créer un projet react-native dans CMD windows
+
 Installer react.js (en globale)
 
-    npm install -g create-react-app
+    > npm install -g create-react-app
 
-Puis installer la cli de react-native dans CMD windows
+Puis installer la cli de react-native (en globale) dans CMD windows
 
-    npm install -g react-native-cli
+    > npm install -g react-native-cli
 
-Puis faite 
+Puis faite, la commande ci-dessous pour vérifier que c'est bien installer 
 
-    react-native -v
+    > react-native -v
 
 
 ## Installer la libairie viro media 
 
 Dans la CMD windows
 
-    react-native init ViroSample --version=0.59.3
+    > react-native init ViroSample --version=0.59.3
 
-Ou cette version qui permettra de ne pas avoir d'erreur après avoir fait npm install -S -E react-viro
+Ou cette version qui permettra de ne pas avoir d'erreur après avoir fait `> npm install -S -E react-viro`
 
-    react-native init ViroSample --version=0.59.9
+    > react-native init ViroSample --version=0.59.9
 
 Puis 
 
-    cd ViroSample
+    > cd ViroSample
 
-Puis toujours dans la CMD
+Puis toujours dans la CMD windows
 
-    npm install -S -E react-viro
+    > npm install -S -E react-viro
 
 Si à cette étape il y a des erreurs lors de l'installation rajouter --legacy-peer-deps
 
-    npm install -S -E react-viro --legacy-peer-deps
+    > npm install -S -E react-viro --legacy-peer-deps
 
 
 Puis 
@@ -46,13 +47,15 @@ Puis
 
 Puis
 
-    npm start
+    > npm start
 
 S'il y a cette erreur après le npm start
 
     error Invalid regular expression: /(.*\\__fixtures__\\.*|node_modules[\\\]react[\\\]dist[\\\].*|website\\node_modules\\.*|heapCapture\\bundle\.js|.*\\__tests__\\.*)$/: Unterminated character class. Run CLI with --verbose flag for more details.
 
 Aller dans le dossier \node_modules\metro-config\src\defaults\blacklist.js et modifier la première ligne de sharedBlacklist
+
+Avant :
 
     var sharedBlacklist = [
         /node_modules[/\\]react[/\\]dist[/\\].*/,
@@ -61,7 +64,7 @@ Aller dans le dossier \node_modules\metro-config\src\defaults\blacklist.js et mo
         /.*\/__tests__\/.*/
     ];
 
-en 
+Après :
 
     var sharedBlacklist = [
         /node_modules[\/\\]react[\/\\]dist[\/\\].*/,
@@ -72,7 +75,7 @@ en
 
 
 
-## Télécharger viro media sur le telephone et se connecter par une adresse ngrok dans l'ongelt < Enter Testbed > de viro media
+## Télécharger viro media sur le telephone et se connecter avec une adresse ngrok dans l'onglet < Enter Testbed > de viro media
 
 Si vous n'avez pas d'adresse ngrok
 
@@ -86,10 +89,10 @@ Décomprésser l'executable.
 
 Puis se connecter dans ngrok à cette adresse https://dashboard.ngrok.com/signup , afin de pouvoir récupérer un authtoken
 
-Une fois récupérer le authtoken , taper en ligne de commande :
+Une fois récupérer le authtoken , taper en ligne de commande ngrok authtoken + votre authtoken :
 
-    ngrok authtoken <your_auth_token>
+    > ngrok authtoken <your_auth_token>
 
 Puis tapez ngrok http + le port ou est executer le projet 
 
-    ngrok http 8081
+    > ngrok http 8081
