@@ -85,11 +85,11 @@ Télécharger le dossier zip de ngrok à cette adresse https://ngrok.com/downloa
 
 Décomprésser l'executable (le fichier `ngrok.exe`). 
 
-- 1) Mettre l'executable (le fichier `ngrok.exe`), dans votre projet afin de pouvoir utiliser la commande `ngrok` dans le terminale, qui pointe sur votre projet.
+- 1) Créer un dossier nommé "ngrok" spécialement pour l'executable ngrok (le fichier `ngrok.exe`), dans votre projet afin de pouvoir utiliser la commande `ngrok` dans le terminale, qui pointe sur votre projet, après avoir mis le dossier qui contient l'executable ngrok (le fichier `ngrok.exe`) dans la `variable d'environnement PATH` exemple (votre_projet/ngrok/)
 
 ou
 
-- 2) (Facultatif) Créer un dossier nommé "ngrok" spécialement pour l'executable ngrok (le fichier `ngrok.exe`) dans cette adresse par exemple `C:/Programmes` et mettre le dossier dossier qui contient l'executable ngrok (le fichier `ngrok.exe`) dans la `variable d'environnement PATH`, exemple (C:/Programmes/ngrok/), afin d'utiliser la ligne de commande `ngrok` partout. 
+- 2) (Facultatif) Créer un dossier nommé "ngrok" spécialement pour l'executable ngrok (le fichier `ngrok.exe`) dans cette adresse par exemple `C:/Programmes` et mettre le dossier qui contient l'executable ngrok (le fichier `ngrok.exe`) dans la `variable d'environnement PATH`, exemple (C:/Programmes/ngrok/), afin d'utiliser la ligne de commande `ngrok` partout. 
 
 Puis se connecter dans ngrok à cette adresse https://dashboard.ngrok.com/signup , afin de pouvoir récupérer un authtoken
 
