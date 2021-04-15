@@ -15,22 +15,36 @@ import {
   ViroSpotLight,
   ViroARPlaneSelector,
   ViroNode,
-  ViroAnimations
+  ViroAnimations,
+  ViroVideo
 } from 'react-viro';
 
+
+
 export default class HelloWorldSceneAR extends Component {
+
+  VIDEO_REF = "videoref";
+
+  /* videos = [
+    {uri: './video/wOof.mp4'}
+  ]; */
 
   constructor() {
     super();
 
     // Set initial state here
-    this.state = {
-      text : "Initializing AR... ok"
-    };
+     this.state = {
+      text : "Initializing AR... ok",
+      videoPaused: true,
+      videoIndex: 0,
+    }; 
 
     // bind 'this' to functions
     this._onInitialized = this._onInitialized.bind(this);
+    this._onPlayVideo = this._onPlayVideo.bind(this);
   }
+
+  
 
   render() {
       return (
@@ -55,8 +69,28 @@ export default class HelloWorldSceneAR extends Component {
                       type="VRX"
                   />
               </ViroNode>
+
+              <ViroVideo
+                  ref={this.VIDEO_REF}
+                  source={require('./video/wOof.mp4')}
+                  // source={require(this.state.videos.uri = this.state.videoIndex)}
+                  loop={true}
+                  position={[0,2,-5]}
+                  scale={[2,2,0]}
+                  width={2}
+                  onClick={this._onPlayVideo}
+                  paused={this.state.videoPaused}
+              />
+
           </ViroARScene>
       );
+  }
+
+  _onPlayVideo(){
+
+      this.setState({
+          videoPaused : !this.state.videoPaused
+      });
   }
 
   _onInitialized(state, reason) {
